@@ -31,7 +31,7 @@ class UserController extends Controller
         $users = User::where(function($query) use ($search){
             if($search){
                 $query->where('email',$search);
-                $query->orwhere('name','like',"%{$search}%");
+                $query->orWhere('name','like',"%{$search}%");
             }
         })->get();
             return view('users.index', compact('users'));

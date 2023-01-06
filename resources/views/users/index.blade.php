@@ -10,7 +10,7 @@
     (<a href="{{route('users.create')}}">+</a>)
 </h1>
 
-<form action="#" method="get">
+<form action="{{ route(users.index)}}" method="get">
 <input type="text" name="search" placeholder="Pesquisar">
 <button>Pesquisar</button>
 
